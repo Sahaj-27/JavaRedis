@@ -9,7 +9,9 @@ class ClientHandler extends Thread {
     private final Socket clientSocket;
 
     // Create input and output streams
+    @SuppressWarnings("FieldCanBeLocal")
     private InputStream inputStream;
+    @SuppressWarnings("FieldCanBeLocal")
     private OutputStream outputStream;
 
     // Set the client socket
